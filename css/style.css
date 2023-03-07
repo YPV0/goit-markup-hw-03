@@ -1,0 +1,164 @@
+:root {
+  --main-color: #2e2f42; /* Logo/hero/footer/nav_items color*/
+  --secondary-color: #fff; /* Title/Button/Cards*/
+  --link-hover-color: #404bbf; /* header links hover color*/
+  --additional-background-color: #f4f4fd; /* Team and menu button bg color, logo bottom 2nd part*/
+  --footer-text-color: #e7e9fc; /*Footer text color*/
+  --main-btn-logo-txt-color: #4d5ae5; /* Logo, service button , menu button color*/
+  --section-text-color: #434455;
+}
+
+a {
+  text-decoration: none;
+}
+.list {
+  list-style: none;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  background-color: var(--secondary-color);
+}
+/* ============================= COMPONENTS =============================*/
+.section-text {
+  color: var(--section-text-color);
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+.section-subtitle {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--main-color);
+}
+.section-title {
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+}
+
+/* ============================= /COMPONENTS =============================*/
+/* ============================= LOGO =============================*/
+
+.logo {
+  font-family: "Raleway";
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.33;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: var(--main-btn-logo-txt-color);
+}
+
+.logo-second-part {
+  color: var(--main-color);
+}
+.logo-btm-second-part {
+  color: var(--additional-background-color);
+}
+/* ============================= /LOGO =============================*/
+/* ============================= HEADER =============================*/
+
+.nav-link {
+  color: var(--main-color);
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--link-hover-color);
+}
+
+.address-item {
+  color: var(--section-text-color);
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+.address-item:hover,
+.address-item:focus {
+  color: var(--link-hover-color);
+}
+/* ============================= /HEADER =============================*/
+/* ============================= MAIN =============================*/
+.hero {
+  background-color: var(--main-color);
+}
+.hero-title {
+  font-size: 56px;
+  line-height: 1.07;
+  color: var(--secondary-color);
+  letter-spacing: 0.02em;
+}
+.service-button {
+  background-color: var(--main-btn-logo-txt-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  color: var(--secondary-color);
+  font-family: inherit;
+  line-height: 1.5;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+}
+.service-button:hover,
+.service-button:focus {
+  background-color: var(--link-hover-color);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.team {
+  background-color: var(--additional-background-color);
+}
+.card {
+  background-color: var(--secondary-color);
+}
+/* ============================= /MAIN =============================*/
+/* ============================= FOOTER =============================*/
+footer {
+  background-color: var(--main-color);
+}
+
+.footer-text {
+  color: var(--footer-text-color);
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+/* ============================= FOOTER =============================*/
+
+/*================================PORTFOLIO===========================*/
+
+.menu-button {
+  background-color: var(--additional-background-color);
+  border: 1px solid #e7e9fc;
+  border-radius: 4px;
+  color: var(--main-btn-logo-txt-color);
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  font-family: inherit;
+}
+.menu-button:hover,
+.menu-button:focus {
+  background-color: var(--link-hover-color);
+  color: var(--secondary-color);
+}
+
+/*================================/PORTFOLIO===========================*/
