@@ -18,6 +18,7 @@ a {
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -45,6 +46,17 @@ body {
   letter-spacing: 0.02em;
   text-transform: capitalize;
 }
+img {
+  width: 100%;
+  max-width: 100%;
+  display: block;
+}
+
+.container {
+  width: 1158px;
+  padding: 0 5px;
+  outline: 2px solid red;
+}
 
 /* ============================= /COMPONENTS =============================*/
 /* ============================= LOGO =============================*/
@@ -67,12 +79,17 @@ body {
 }
 /* ============================= /LOGO =============================*/
 /* ============================= HEADER =============================*/
-
 .header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px 0;
+  border-bottom: 1px solid #e7e9fc;
+}
+.header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 24px 156px 24px 156px;
 }
 
 .navigation {
@@ -116,12 +133,17 @@ body {
 }
 /* ============================= /HEADER =============================*/
 /* ============================= MAIN =============================*/
+
 .hero {
+  display: flex;
+  justify-content: center;
   background-color: var(--main-color);
+  padding: 188px 0;
+}
+.hero .container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 188px 472px;
   gap: 48px;
 }
 .hero-title {
@@ -130,6 +152,7 @@ body {
   color: var(--secondary-color);
   letter-spacing: 0.02em;
   text-align: center;
+  max-width: 496px;
 }
 .service-button {
   background-color: var(--main-btn-logo-txt-color);
@@ -140,8 +163,8 @@ body {
   line-height: 1.5;
   font-weight: 500;
   letter-spacing: 0.04em;
-  padding: 16px 32px;
   border: none;
+  padding: 16px 32px;
 }
 .service-button:hover,
 .service-button:focus {
@@ -161,15 +184,30 @@ body {
   overflow: hidden;
 }
 
+.features {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 120px 0;
+}
+
+.feature {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
 .features-list {
   display: flex;
   flex-direction: row;
-  padding: 120px 156px;
   gap: 24px;
 }
-
 .work-examples {
-  padding: 0 156px 120px 156px;
+  display: flex;
+  justify-content: center;
+  padding: 120px 0;
+}
+.work-examples .container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -185,7 +223,12 @@ body {
 
 .team {
   background-color: var(--additional-background-color);
-  padding: 120px 156px;
+  display: flex;
+  justify-content: center;
+  padding: 120px 0;
+}
+
+.team .container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -220,10 +263,9 @@ body {
 /* ============================= FOOTER =============================*/
 footer {
   background-color: var(--main-color);
-  padding: 100px 0 100px 156px;
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  justify-content: center;
+  padding: 94px 0;
 }
 
 .footer-section {
@@ -232,6 +274,7 @@ footer {
   align-items: flex-start;
   gap: 17.5px;
   max-width: 264px;
+  align-self: center;
 }
 
 .footer-text {
@@ -245,9 +288,14 @@ footer {
 
 .portfolio-section {
   display: flex;
+  justify-content: center;
+  padding: 96px 0 120px 0;
+}
+
+.portfolio-section .container {
+  display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 96px 156px 120px 156px;
   gap: 72px;
 }
 
@@ -256,28 +304,6 @@ footer {
   flex-direction: row;
   align-items: center;
   gap: 24px;
-}
-
-.cards-grid {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 24px;
-  justify-content: center;
-}
-
-.grid-card {
-  border: 1px solid #e7e9fc;
-  margin-bottom: 48px;
-}
-
-.grid-card-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 8px;
-  padding: 32px 0 32px 16px;
 }
 
 .menu-button {
@@ -295,6 +321,31 @@ footer {
 .menu-button:focus {
   background-color: var(--link-hover-color);
   color: var(--secondary-color);
+}
+
+.cards-grid {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  justify-content: center;
+}
+
+.grid-card {
+  border: 1px solid #e7e9fc;
+}
+
+.grid-card:not(:nth-of-type(n + 7)) {
+  margin-bottom: 48px;
+}
+
+.grid-card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8px;
+  padding: 32px 0 32px 16px;
 }
 
 /*================================/PORTFOLIO===========================*/
