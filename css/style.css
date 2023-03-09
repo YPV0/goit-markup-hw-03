@@ -185,6 +185,10 @@ img {
   gap: 24px;
 }
 
+.feature {
+  width: 264px;
+}
+
 .feature .section-subtitle {
   margin-bottom: 8px;
 }
@@ -246,11 +250,11 @@ footer {
 
 .footer-logo {
   display: block;
-  margin-bottom: 17.5px;
+  margin-bottom: 16px;
 }
 
 .footer-text {
-  max-width: 264px;
+  width: 264px;
 }
 /* ============================= FOOTER =============================*/
 
@@ -277,6 +281,7 @@ footer {
   line-height: 1.5;
   letter-spacing: 0.04em;
   font-family: inherit;
+  cursor: pointer;
 }
 .menu-button:hover,
 .menu-button:focus {
